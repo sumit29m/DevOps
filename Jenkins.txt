@@ -1,0 +1,75 @@
+ https://www.jenkins.io/doc/
+https://get.jenkins.io/war-stable/
+https://plugins.jenkins.io/
+
+Java 8
+1  wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    2  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    3  yum udpate -y
+    4  yum update -y
+    5  yum install java-11-openjdk -y
+    6  yum install java-1.8.0-openjdk-devel.x86_64 -y
+    7  yum install jenkins-2.346.3* -y
+    8  systemctl start jenkins
+    9  systemctl status jenkins
+   10  cat /var/lib/jenkins/secrets/initialAdminPassword
+   11  cd /var/lib/jenkins/
+   12  ls -ltr
+   13  cdp l
+   14  cd plugins/
+   15  ls -ltr
+   16  cd ../
+   17  ls -ltr
+   18  cd users
+   19  ls -ltr
+   20  cd shantanu_2819791189712516226/
+   21  ls -ltr
+   22  pwd
+   23  cat config.xml
+
+Java 11
+1  cd /etc/yum.repos.d/
+    2  ls -ltr
+    3  cd
+    4  wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    5  cd /etc/yum.repos.d/
+    6  ls -ltr
+    7  cat jenkins.repo
+    8  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    9  yum update -y
+   10  yum install java-11-openjdk
+   11  amazon-linux-extras install java-openjdk11 -y
+   12  java -version
+   13  yum install jenkins -y
+   14  java -versioncd
+   15  cd
+   16  yum install jenkins -y
+   17  systemctl status jenkins
+   18  systemctl start jenkins
+   19  systemctl status jenkins
+   20  cd /var/lib/jenkins/
+   21  ls -ltr
+   22  cd secrets/
+   23  ls
+   24  cat initialAdminPassword
+   25  pwd
+   26  cd ../
+   27  ls -ltr
+   28  cd plugins/
+   29  ls -ltr
+   30  pwd
+   31  ls -ltr
+   32  pwd
+   33  cd ../
+   34  ls -ltr
+   35  cd plugins/
+   36  ls –ltr
+
+https://www.jenkins.io/doc/book/installing/war-file/
+https://get.jenkins.io/war-stable/2.346.3/
+
+
+
+https://community.jenkins.io/
+https://issues.jenkins.io/secure/Dashboard.jspa
+

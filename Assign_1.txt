@@ -1,0 +1,76 @@
+#!/bin/bash
+
+v1=a
+v2=b
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a + $b`
+echo "a+b=$res"
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a - $b`
+echo "a-b=$res"
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a \* $b`
+echo "a*b=$res"
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a / $b`
+echo "a/b=$res"
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a % $b`
+echo "a%b=$res"
+
+[root@ip-172-31-10-133 mnt]# vi f1.sh
+read $v1
+read $v2
+res=`expr $a - $b`
+echo "a-b=$res"
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a \* $b`
+echo "a*b=$res"
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a / $b`
+echo "a/b=$res"
+
+echo "Enter the No :"
+read $v1
+read $v2
+res=`expr $a % $b`
+echo "a%b=$res"
+
+
+
+=================================================
+#!/bin/bash
+
+if [ $1 -gt $2 ]
+then
+        echo "$1 is greater than $2"
+elif [ $1 -lt $2 ]
+then
+        echo "$1 is less than $2"
+
+else
+        echo "$1 is equal to $2"
+fi
+
+

@@ -1,0 +1,44 @@
+  yum install mysql -y
+    
+  mysql -v
+    
+  mysql -version
+    
+  clear
+    
+  mysql -h database-1.cojlyr7kjepv.ap-south-1.rds.amazonaws.com -u admin -p
+
+
+  CREATE TABLE pet (name VARCHAR(20), owner VARCHAR(20),species VARCHAR(20), sex CHAR(1), birth DATE, death DATE);
+
+
+  INSERT INTO pet VALUES ('tim','shantanu','cow','m','1999-03-30',NULL);
+
+
+  select * from pet;
+
+
+  show databases;
+
+
+  use databasename;
+
+
+  show tables;
+
+------------------------------------
+
+->MySQL Settigs
+Create database "test"
+
+CREATE TABLE `USER` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `regdate` date NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
